@@ -14,6 +14,11 @@ vector<TrainLeg> read()
 	file.open("1.xml");
 	if (file.is_open())
 		cout << "file is open! Wait for work"<<endl;
+	else
+	{
+		cout << "file not open!";
+		exit(1);
+	}
 	string buf;
 
 	getline(file, buf);//xml версия не нужна
